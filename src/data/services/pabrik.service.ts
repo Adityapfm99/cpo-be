@@ -7,15 +7,11 @@ import { UpdateResult, DeleteResult } from  'typeorm';
 @Injectable()
 export class PabrikService {
 
-    /**
-     *
-     */
+  
     constructor(@InjectRepository(Pabrik)
     private pabrikRepository: Repository<Pabrik>) {
     }
-    /**
-     *
-     */
+
 
     async  findAll(): Promise<Pabrik[]> {
         return await this.pabrikRepository.find();

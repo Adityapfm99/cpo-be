@@ -1,17 +1,23 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class User {
+export class DailyReport {
     @PrimaryGeneratedColumn('increment')
     id: number;
 
     @Column()
-    group: string;
+    periode: Date;
 
     @Column()
-    email: string;
+    pt: string;
 
     @Column()
-    password: string;
+    tbs: number;
+
+    @Column()
+    cpo: number;
+
+    @Column()
+    pulau : string;
 
 }

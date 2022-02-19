@@ -1,7 +1,7 @@
-import { Contact } from './pabrik.entity';
+import { Pabrik } from './pabrik.entity';
 
 describe('ContactEntity', () => {
   it('should be defined', () => {
-    expect(new Contact()).toBeDefined();
+    expect(new Pabrik()).toBeDefined();
   });
 });
